@@ -6,11 +6,11 @@ This is the demo of a highly compact `You Only Look Once` Convolutional Neural N
 
 You may download all the materials needed by either downloading the ZIP file or by cloning the git repository
 
-**Using ZIP file:**
+**ZIP file:**
 
 To download the ZIP file click `Code` -> `Download ZIP` in your browser being on the branch page, then unpack it to the desired location on your hard drive
 
-**Using git:**
+**git:**
 
 In case `git` is not yet installed on your operating system you may install it using the official guide: https://github.com/git-guides/install-git
 
