@@ -9,7 +9,7 @@ Clone this branch using git:
 ```
     git clone --b Week-1.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 
-    cd Machine-Learning-in-Computer-Vision.git
+    cd Machine-Learning-in-Computer-Vision
 ```
 
 ## Create a virtual environment
