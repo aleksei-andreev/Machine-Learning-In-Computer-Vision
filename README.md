@@ -7,7 +7,7 @@ This is the demo of a highly compact `You Only Look Once` Convolutional Neural N
 Clone this branch using git:
 
 ```
-    git clone --b Week-1.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+    git clone --branch Week-1.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 
     cd Machine-Learning-in-Computer-Vision
 ```
