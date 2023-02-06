@@ -52,6 +52,8 @@ Create and activate virtual environment:
 
 To manage different Python versions and virtual environments, you may install `conda` using the official guide: https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html
 
+Then create and activate virtual environment:
+
 ```
     conda create -n venv python=3.8.8
 	
