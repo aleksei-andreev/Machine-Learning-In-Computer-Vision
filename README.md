@@ -18,7 +18,11 @@ Clone this branch using git:
 
 ```
 git clone --branch Week-1.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+```
 
+After getting all the materials needed change the current working directory by:
+
+```
 cd Machine-Learning-in-Computer-Vision
 ```
 
