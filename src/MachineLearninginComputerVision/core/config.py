@@ -12,7 +12,10 @@
 #================================================================
 
 from easydict import EasyDict as edict
+import os.path as osp
+import os
 
+direct_path = osp.abspath(osp.dirname(osp.dirname(__file__))).replace(os.sep, "/")
 
 __C                             = edict()
 # Consumers can get config by: from config import cfg
@@ -23,7 +26,7 @@ cfg                             = __C
 __C.YOLO                        = edict()
 
 # Set the class name
-__C.YOLO.CLASSES                = "./data/classes/voc.names"
+__C.YOLO.CLASSES                = direct_path + "/data/classes/voc.names"
 __C.YOLO.ANCHORS                = "./data/anchors/basline_anchors.txt"
 __C.YOLO.MOVING_AVE_DECAY       = 0.9995
 __C.YOLO.STRIDES                = [8, 16, 32]

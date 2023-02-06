@@ -14,14 +14,17 @@
 import cv2
 import time
 import numpy as np
-import core.utils as utils
+import MachineLearninginComputerVision.core.utils as utils
 import tensorflow as tf
+import os.path as osp
+import os
 from PIL import Image
 
+direct_path = osp.abspath(osp.dirname(__file__)).replace(os.sep, "/")
 
 return_elements = ["input/input_data:0", "pred_sbbox/concat_2:0", "pred_lbbox/concat_2:0"]
-pb_file         = "./model/yolov3_nano_416.pb"
-video_path      = "./sample/road.mp4"
+pb_file         = direct_path + "/model/yolov3_nano_416.pb"
+video_path      = direct_path + "/sample/road.mp4"
 # video_path      = 0
 num_classes     = 20
 input_size      = 416
