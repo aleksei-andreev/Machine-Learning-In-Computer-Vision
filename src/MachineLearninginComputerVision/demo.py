@@ -11,14 +11,16 @@
 #
 # ================================================================
 
-import cv2
-import time
-import numpy as np
-import MachineLearninginComputerVision.core.utils as utils
-import tensorflow as tf
-import os.path as osp
 import os
+import os.path as osp
+import time
+
+import cv2
+import numpy as np
+import tensorflow as tf
 from PIL import Image
+
+import MachineLearninginComputerVision.core.utils as utils
 
 direct_path = osp.abspath(osp.dirname(__file__)).replace(os.sep, "/")
 

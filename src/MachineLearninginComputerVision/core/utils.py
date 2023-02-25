@@ -11,11 +11,13 @@
 #
 # ================================================================
 
-import cv2
-import random
 import colorsys
+import random
+
+import cv2
 import numpy as np
 import tensorflow as tf
+
 from MachineLearninginComputerVision.core.config import cfg
 
 

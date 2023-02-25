@@ -11,9 +11,10 @@
 #
 # ================================================================
 
-from easydict import EasyDict as edict
-import os.path as osp
 import os
+import os.path as osp
+
+from easydict import EasyDict as edict
 
 direct_path = osp.abspath(osp.dirname(osp.dirname(__file__))).replace(os.sep, "/")
 
