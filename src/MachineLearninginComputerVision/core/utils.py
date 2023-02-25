@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-# coding=utf-8
 # ================================================================
 #   Copyright (C) 2019 * Ltd. All rights reserved.
 #
@@ -24,7 +23,7 @@ from MachineLearninginComputerVision.core.config import cfg
 def read_class_names(class_file_name):
     """loads class name from a file"""
     names = {}
-    with open(class_file_name, "r") as data:
+    with open(class_file_name) as data:
         for ID, name in enumerate(data):
             names[ID] = name.strip("\n")
     return names
@@ -89,7 +88,7 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         cv2.rectangle(image, c1, c2, bbox_color, bbox_thick)
 
         if show_label:
-            bbox_mess = "%s: %.2f" % (classes[class_ind], score)
+            bbox_mess = "{}: {:.2f}".format(classes[class_ind], score)
             t_size = cv2.getTextSize(bbox_mess, 0, fontScale, thickness=bbox_thick // 2)[0]
             cv2.rectangle(image, c1, (c1[0] + t_size[0], c1[1] - t_size[1] - 3), bbox_color, -1)  # filled
 

@@ -49,7 +49,7 @@ Then create and activate virtual environment:
 
 ```
     conda create -n venv python=3.8.8
-	
+
     conda activate venv
 ```
 
