@@ -1,3 +1,23 @@
+[tool.black]
+line-length=109
+target-version=["py36","py37","py38","py39"]
+include='\.pyi?$'
+exclude='''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | asset
+)/
+'''
+
 [tool.isort]
 line_length=120
 indent="    "
