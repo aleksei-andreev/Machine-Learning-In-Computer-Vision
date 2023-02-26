@@ -5,8 +5,11 @@ This is the demo of a highly compact `You Only Look Once` Convolutional Neural N
 ## Week 2
 
 Branches "Week-1.1" and "Week-1.2" reproduce the assignments of "Week 1":
+
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.1
+
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.2
+
 
 This branch reproduces the first assignment of "Week 2"
 
