@@ -188,7 +188,7 @@ Configurations for this tool may be seen in the `.pre-commit-config.yaml` file
 Then install all the git hooks needed for this tool:
 
 ```
-    pre-commit install .
+    pre-commit install
 ```
 
 From now on every commit will be checked by this tool
