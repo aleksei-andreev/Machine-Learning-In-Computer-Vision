@@ -16,4 +16,4 @@ src/MachineLearninginComputerVision/core/config.py
 src/MachineLearninginComputerVision/core/utils.py
 src/MachineLearninginComputerVision/data/classes/voc.names
 src/MachineLearninginComputerVision/model/yolov3_nano_416.pb
-src/MachineLearninginComputerVision/sample/road.mp4
+src/MachineLearninginComputerVision/sample/road.jpg
