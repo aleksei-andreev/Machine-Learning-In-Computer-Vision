@@ -126,7 +126,7 @@ You must have the `black` package installed. If you don't have it, you may insta
     pip install black
 ```
 
-Configurations for this tool may be seen in the "pyproject.toml" file
+Configurations for this tool may be seen in the `pyproject.toml` file
 
 Run the tool using:
 
@@ -144,7 +144,7 @@ You must have the `isort` package installed. If you don't have it, you may insta
     pip install isort
 ```
 
-Configurations for this tool may be seen in the "pyproject.toml" file
+Configurations for this tool may be seen in the `pyproject.toml` file
 
 Run the tool using:
 
@@ -162,7 +162,7 @@ You must have the `flake8` package installed. If you don't have it, you may inst
     pip install flake8
 ```
 
-Configurations for this tool may be seen in the "setup.cfg" file
+Configurations for this tool may be seen in the `setup.cfg` file
 
 Run the tool using:
 
@@ -180,7 +180,7 @@ You must have the `pre-commit` package installed. If you don't have it, you may 
     pip install pre-commit
 ```
 
-Configurations for this tool may be seen in the ".pre-commit-config.yaml" file
+Configurations for this tool may be seen in the `.pre-commit-config.yaml` file
 
 Then install all the git hooks needed for this tool:
 
@@ -190,7 +190,7 @@ Then install all the git hooks needed for this tool:
 
 From now on every commit will be checked by this tool
 
-Run the tool without commiting using:
+Run the tool without committing using:
 
 ```
     pre-commit run -a
