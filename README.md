@@ -2,11 +2,13 @@
 
 This is the demo of a highly compact `You Only Look Once` Convolutional Neural Network for Object Detection
 
-## Week 1
+## Week 2
 
-Branch "Week-1.1" reproduces the first assignment of "Week 1": https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.1
+Branches "Week-1.1" and "Week-1.2" reproduce the assignments of "Week 1":
+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.1
+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.2
 
-This branch reproduces the second assignment of "Week 1"
+This branch reproduces the first assignment of "Week 2"
 
 ## Create a virtual environment
 
@@ -59,7 +61,7 @@ In case `git` is not yet installed on your operating system you may install it u
 Clone this branch using git:
 
 ```
-git clone --branch Week-1.2 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+git clone --branch Week-2.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 ```
 
 After getting all the materials needed change the current working directory:
@@ -93,7 +95,7 @@ Then build the package:
 Finally, install the main package:
 
 ```
-    pip install dist/MachineLearninginComputerVision-0.1.0.tar.gz
+    pip install dist/MachineLearninginComputerVision-0.2.0.tar.gz
 ```
 
 ## Install the package directly from the repository
@@ -101,7 +103,7 @@ Finally, install the main package:
 Use the following code to install the package directly from the repository without downloading all the materials:
 
 ```
-    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-1.2
+    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-2.1
 ```
 
 ## Run the script
@@ -110,4 +112,86 @@ To run the script just use the command below:
 
 ```
     demo
+```
+
+## Setup the project for the local development
+
+You may skip everything before `pre-commit`, because it has all these tools already included. But it is possible to make all the checks separately from the beginning
+
+### Code formatter
+
+You must have the `black` package installed. If you don't have it, you may install it:
+
+```
+    pip install black
+```
+
+Configurations for this tool may be seen in the "pyproject.toml" file
+
+Run the tool using:
+
+```
+    black .
+```
+
+Be aware that errors found by this tool will be fixed automatically
+
+### Import sorting
+
+You must have the `isort` package installed. If you don't have it, you may install it:
+
+```
+    pip install isort
+```
+
+Configurations for this tool may be seen in the "pyproject.toml" file
+
+Run the tool using:
+
+```
+    isort .
+```
+
+Be aware that errors found by this tool will be fixed automatically
+
+### Linter
+
+You must have the `flake8` package installed. If you don't have it, you may install it:
+
+```
+    pip install flake8
+```
+
+Configurations for this tool may be seen in the "setup.cfg" file
+
+Run the tool using:
+
+```
+    flake8 .
+```
+
+Be aware that errors found by this tool must be fixed manually
+
+### Pre-commit
+
+You must have the `pre-commit` package installed. If you don't have it, you may install it:
+
+```
+    pip install pre-commit
+```
+
+Configurations for this tool may be seen in the ".pre-commit-config.yaml" file
+
+Then install all the git hooks needed for this tool:
+
+```
+    pre-commit install .
+```
+
+From now on every commit will be checked by this tool
+
+Run the tool without commiting using:
+
+```
+    pre-commit run -a
 ```
