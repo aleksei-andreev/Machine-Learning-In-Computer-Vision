@@ -1,2 +1,4 @@
 .python-version
 src/MachineLearninginComputerVision/core/__pycache__
+src/MachineLearninginComputerVision/__pycache__
+tests/__pycache__

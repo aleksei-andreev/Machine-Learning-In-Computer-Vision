@@ -22,10 +22,9 @@ import MachineLearninginComputerVision.core.utils as utils
 direct_path = osp.abspath(osp.dirname(__file__)).replace(os.sep, "/")
 
 
-def main():
+def main(image_path=direct_path + "/sample/road.jpg", show=True):
     return_elements = ["input/input_data:0", "pred_sbbox/concat_2:0", "pred_lbbox/concat_2:0"]
     pb_file = direct_path + "/model/yolov3_nano_416.pb"
-    image_path = direct_path + "/sample/road.jpg"
     num_classes = 20
     input_size = 416
     graph = tf.Graph()
@@ -54,14 +53,17 @@ def main():
         bboxes = utils.nms(bboxes, 0.45, method="nms")
         image = utils.draw_bbox(frame, bboxes)
 
-        result = np.asarray(image)
-        cv2.namedWindow("result", cv2.WINDOW_NORMAL)
         result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         result_s = cv2.resize(result, (1920, 1080))
         final = cv2.cvtColor(result_s, cv2.COLOR_RGB2BGR)
-        cv2.imshow("result", final)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+
+        if show:
+            cv2.namedWindow("result", cv2.WINDOW_NORMAL)
+            cv2.imshow("result", final)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+
+    return final
 
 
 if __name__ == "__main__":
