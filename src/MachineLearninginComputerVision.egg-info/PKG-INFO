@@ -216,4 +216,44 @@ Run the tool without committing using:
     pre-commit run -a
 ```
 
-### Test
+### Local testing
+
+You must have the `pytest` package installed. If you don't have it, you may install it:
+
+```
+    pip install pytest
+```
+
+Run the tests by:
+
+```
+    pytest
+```
+
+Test cases are located in `tests/test_demo.py`
+
+* `test_regression()` uses single image that checks that results are always the same and nothing is being corrupted by some changes in the code;
+
+* `test_correct_sizes()` verifies that there are no errors when dealing with different sizes of an image;
+
+* `test_same_result()` makes sure that a new run of the model on the same image gives the identical result and there is no any randomization
+
+## Continuous integration [CI] pipeline
+
+Firstly, you should add a branch protection rule in order to prevent the branch with failed tests to be merged with your base branch. It could be done by going to *Settings -> Branches [Code and automation] -> Add rule [Branch protection rules]* from your repository
+
+Use the screenshots below to set it up correctly
+
+![Branch protection rule 1](./misc/Branch-protection-rule-1.jpg)
+![Branch protection rule 2](./misc/Branch-protection-rule-2.jpg)
+
+After every commit push or a pull request CI pipeline makes all the tests and style checks and in case of a commit push also builds a new version of the package
+
+* Test and build on push configurations are located in `.github/workflows/test_Push.yml`;
+
+* Test on pull request configurations are located in `.github/workflows/test_PR.yml`
+
+
+![Test and Build on Push](https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/actions/workflows/test_Push.yml/badge.svg)
+
+![Test on Pull Request](https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/actions/workflows/test_PR.yml/badge.svg)
