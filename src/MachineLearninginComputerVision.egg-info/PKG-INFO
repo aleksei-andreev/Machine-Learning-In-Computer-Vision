@@ -252,3 +252,7 @@ After every commit push or a pull request CI pipeline makes all the tests and st
 * Test and build on push configurations are located in `.github/workflows/test_Push.yml`;
 
 * Test on pull request configurations are located in `.github/workflows/test_PR.yml`
+
+
+![Test and Build on Push](https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/actions/workflows/test_Push.yml/badge.svg)
+![Test on Pull Request](https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/actions/workflows/test_PR.yml/badge.svg)
