@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: MachineLearninginComputerVision
-Version: 0.2.0
+Version: 0.2.1
 Summary: YOLOv3_nano Demo
 Home-page: https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision
 Author: Aleksei Andreev
 Author-email: aaandreev_6@edu.hse.ru
 Requires-Python: >=3.7,<3.10
 Description-Content-Type: text/markdown
+Provides-Extra: testing
 License-File: LICENSE
 
 # YOLOv3-nano Demo
