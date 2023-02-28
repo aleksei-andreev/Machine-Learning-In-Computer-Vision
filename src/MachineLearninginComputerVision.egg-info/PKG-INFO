@@ -244,8 +244,8 @@ Firstly, you should add a branch protection rule in order to prevent the branch 
 
 Use the screenshots below to set it up correctly
 
-![Branch protection rule 1](./misc/Branch protection rule 1.jpg)
-![Branch protection rule 2](./misc/Branch protection rule 2.jpg)
+![Branch protection rule 1](./misc/Branch-protection-rule-1.jpg)
+![Branch protection rule 2](./misc/Branch-protection-rule-2.jpg)
 
 After every commit push or a pull request CI pipeline makes all the tests and style checks and in case of a commit push also builds a new version of the package
 
