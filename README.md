@@ -11,7 +11,12 @@ https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.2
 
 
-This branch reproduces the first assignment of "Week 2"
+Branch "Week-2.1" reproduces the first assignment of "Week 2":
+
+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.1
+
+
+This branch reproduces the second assignment of "Week 2"
 
 ## Create a virtual environment
 
