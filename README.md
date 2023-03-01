@@ -210,7 +210,7 @@ The `pytest` and `pytest-cov` packages must be installed to run the testing and 
 
 ```
     pip install pytest
-    
+
     pip install pytest-cov
 ```
 
