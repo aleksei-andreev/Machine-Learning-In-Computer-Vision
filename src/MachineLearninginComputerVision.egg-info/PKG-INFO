@@ -81,7 +81,7 @@ In case `git` is not yet installed on your operating system you may install it u
 Clone this branch using git:
 
 ```
-git clone --branch Week-2.1 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+git clone --branch Week-2.2 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 ```
 
 After getting all the materials needed change the current working directory:
@@ -115,7 +115,7 @@ Then build the package:
 Finally, install the main package:
 
 ```
-    pip install dist/MachineLearninginComputerVision-0.2.0.tar.gz
+    pip install dist/MachineLearninginComputerVision-0.2.1.tar.gz
 ```
 
 ## Install the package directly from the repository
@@ -123,7 +123,7 @@ Finally, install the main package:
 Use the following code to install the package directly from the repository without downloading all the materials:
 
 ```
-    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-2.1
+    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-2.2
 ```
 
 ## Run the script
