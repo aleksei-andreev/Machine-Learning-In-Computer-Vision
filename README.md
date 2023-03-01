@@ -206,10 +206,12 @@ Run the tool without committing using:
 
 ### Local testing
 
-You must have the `pytest` package installed. If you don't have it, you may install it:
+The `pytest` and `pytest-cov` packages must be installed to run the testing and generate the coverage report. If you don't have them, you may install them:
 
 ```
     pip install pytest
+    
+    pip install pytest-cov
 ```
 
 Run the tests by:
