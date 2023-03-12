@@ -22,7 +22,7 @@ import MachineLearninginComputerVision.core.utils as utils
 direct_path = osp.abspath(osp.dirname(__file__)).replace(os.sep, "/")
 
 
-def main(image_path=direct_path + "/sample/road.jpg", show=True):
+def main(image_path=direct_path + "/sample/road.jpg", show=True, file_img=None):
     return_elements = ["input/input_data:0", "pred_sbbox/concat_2:0", "pred_lbbox/concat_2:0"]
     pb_file = direct_path + "/model/yolov3_nano_416.pb"
     num_classes = 20
@@ -35,7 +35,10 @@ def main(image_path=direct_path + "/sample/road.jpg", show=True):
     print("output2.name =", return_tensors[2].name)  # import/pred_lbbox/concat_2:0
 
     with tf.compat.v1.Session(graph=graph) as sess:
-        frame = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
+        if file_img is None:
+            frame = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
+        else:
+            frame = cv2.cvtColor(file_img, cv2.COLOR_BGR2RGB)
         frame_size = frame.shape[:2]
         image_data = utils.image_preporcess(np.copy(frame), [input_size, input_size])
         image_data = image_data[np.newaxis, ...]
@@ -53,7 +56,10 @@ def main(image_path=direct_path + "/sample/road.jpg", show=True):
         bboxes = utils.nms(bboxes, 0.45, method="nms")
         image = utils.draw_bbox(frame, bboxes)
 
-        result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        if file_img is None:
+            result = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        else:
+            result = image
         result_s = cv2.resize(result, (1920, 1080))
         final = cv2.cvtColor(result_s, cv2.COLOR_RGB2BGR)
 
