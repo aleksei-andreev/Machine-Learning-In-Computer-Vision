@@ -6,6 +6,7 @@ setup.cfg
 setup.py
 src/MachineLearninginComputerVision/__init__.py
 src/MachineLearninginComputerVision/demo.py
+src/MachineLearninginComputerVision/web.py
 src/MachineLearninginComputerVision.egg-info/PKG-INFO
 src/MachineLearninginComputerVision.egg-info/SOURCES.txt
 src/MachineLearninginComputerVision.egg-info/dependency_links.txt
