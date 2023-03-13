@@ -8,8 +8,8 @@ st.set_page_config(layout="wide")
 st.title("YOLOv3-nano Demo")
 st.write(
     "This web app demonstrates the YOLOv3-nano model "
-    "that detects objects and classifies them "
-    "to 10 different classes."
+    "that detects objects and assignes them "
+    "to 10 different classes displaying the confidence level (from 0 to 1)"
 )
 
 file_upload = st.file_uploader("Upload the image", type=["jpeg", "jpg", "png"])

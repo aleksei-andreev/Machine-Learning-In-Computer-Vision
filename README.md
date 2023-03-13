@@ -2,7 +2,7 @@
 
 This is the demo of a highly compact `You Only Look Once` Convolutional Neural Network for Object Detection
 
-## Week 2
+## Week 3
 
 Branches "Week-1.1" and "Week-1.2" reproduce the assignments of "Week 1":
 
@@ -11,12 +11,14 @@ https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.2
 
 
-Branch "Week-2.1" reproduces the first assignment of "Week 2":
+Branches "Week-2.1" and "Week-2.2" reproduce the assignments of "Week 2":
+
+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.1
 
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.1
 
 
-This branch reproduces the second assignment of "Week 2"
+This branch reproduces the assignment of "Week 3"
 
 ## Create a virtual environment
 
@@ -69,7 +71,7 @@ In case `git` is not yet installed on your operating system you may install it u
 Clone this branch using git:
 
 ```
-git clone --branch Week-2.2 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+git clone --branch Week-3 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 ```
 
 After getting all the materials needed change the current working directory:
@@ -103,7 +105,7 @@ Then build the package:
 Finally, install the main package:
 
 ```
-    pip install dist/MachineLearninginComputerVision-0.2.1.tar.gz
+    pip install dist/MachineLearninginComputerVision-0.3.0.tar.gz
 ```
 
 ## Install the package directly from the repository
@@ -111,7 +113,7 @@ Finally, install the main package:
 Use the following code to install the package directly from the repository without downloading all the materials:
 
 ```
-    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-2.2
+    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-3
 ```
 
 ## Run the script
@@ -242,6 +244,86 @@ After every commit push or a pull request CI pipeline makes all the tests and st
 * Test and build on push configurations are located in `.github/workflows/test_Push.yml`;
 
 * Test on pull request configurations are located in `.github/workflows/test_PR.yml`
+
+## Web Demo
+
+You may find the code of the main script in the `src/MachineLearninginComputerVision/web.py` file
+
+To view the single page application that demonstrates the work of the model just run:
+
+```
+    streamlit run src/MachineLearninginComputerVision/web.py
+```
+
+The desired page opens automatically. If it doesn't, simply type the following URL into the address bar of your browser:
+
+```
+    http://localhost:8501/
+```
+
+You may upload an image which you want to be processed, the web app will detect objects and assign them to 10 different classes displaying the confidence level (from 0 to 1)
+
+## Build the Docker Image
+
+Configurations for the Docker Image build may be seen in the `Dockerfile` and `.dockerignore` files
+
+To build the Docker Image yourself you must have `Docker` installed. If you don't have it, you may install it using the official guide: https://docs.docker.com/engine/install
+
+Build the Docker Image:
+
+**Linux/macOS:**
+
+```
+    sudo docker build -t demo .
+```
+
+**Windows:**
+
+```
+    docker build -t demo .
+```
+
+Run the Docker Image that was built:
+
+**Linux/macOS:**
+
+```
+    sudo docker run -p 8501:8501 demo
+```
+
+**Windows:**
+
+```
+    docker run -p 8501:8501 demo
+```
+
+After the message "*You can now view your Streamlit app in your browser*" is displayed in the terminal, you may go to the following web address to view the web demo:
+
+```
+    http://localhost:8501/
+```
+
+## Run the Docker Image directly from the repository
+
+Use the following code to run the Docker Image directly from the repository without having to build it yourself:
+
+**Linux/macOS:**
+
+```
+    sudo docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-3
+```
+
+**Windows:**
+
+```
+    docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-3
+```
+
+After the message "*You can now view your Streamlit app in your browser*" is displayed in the terminal, you may go to the following web address to view the web demo:
+
+```
+    http://localhost:8501/
+```
 
 
 ![Test and Build on Push](https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/actions/workflows/test_Push.yml/badge.svg)
