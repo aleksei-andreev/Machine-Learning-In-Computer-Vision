@@ -273,7 +273,7 @@ The desired page opens automatically. If it doesn't, simply type the following U
     http://localhost:8501/
 ```
 
-You may upload an image which you want to be processed, the web app will detect objects and assign them to 10 different classes displaying the confidence level (from 0 to 1)
+You may upload an image [".jpg", ".jpeg", ".png"] (your own or `src/MachineLearninginComputerVision/sample/road.jpg`) which you want to be processed, the web app will detect objects and assign them to 10 different classes displaying the confidence level (from 0 to 1)
 
 ## Build the Docker Image
 
