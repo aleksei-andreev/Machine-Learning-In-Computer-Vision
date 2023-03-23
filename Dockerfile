@@ -10,8 +10,8 @@ RUN rm -rf /var/cache/apt/archives \
 
 RUN python3 -m pip install --upgrade pip
 
-COPY dist/MachineLearninginComputerVision-0.3.0-py3-none-any.whl .
-RUN python3 -m pip install MachineLearninginComputerVision-0.3.0-py3-none-any.whl
+COPY dist/MachineLearninginComputerVision-0.4.0-py3-none-any.whl .
+RUN python3 -m pip install MachineLearninginComputerVision-0.4.0-py3-none-any.whl
 
 WORKDIR /demo
 COPY src/MachineLearninginComputerVision/web.py /demo
