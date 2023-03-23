@@ -2,7 +2,13 @@
 
 This is the demo of a highly compact `You Only Look Once` Convolutional Neural Network for Object Detection
 
-## Week 3
+References:
+
+[1] PINTO0309 - 023_yolov3-nano (https://github.com/PINTO0309/PINTO_model_zoo/tree/main/023_yolov3-nano)
+[2] Abraham-M97 - YOLOV3-NANO (https://github.com/Abraham-M97/YOLOV3-NANO)
+[3] YunYang1994 - tensorflow-yolov3 (https://github.com/YunYang1994/tensorflow-yolov3)
+
+## Week 4
 
 Branches "Week-1.1" and "Week-1.2" reproduce the assignments of "Week 1":
 
@@ -18,7 +24,12 @@ https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.2
 
 
-This branch reproduces the assignment of "Week 3"
+Branch "Week-3" reproduces the assignment of "Week 3":
+
+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-3
+
+
+This branch reproduces the final week assignment ["Week 4"]
 
 ## Create a virtual environment
 
@@ -71,7 +82,7 @@ In case `git` is not yet installed on your operating system you may install it u
 Clone this branch using git:
 
 ```
-git clone --branch Week-3 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
+git clone --branch Week-4 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git
 ```
 
 After getting all the materials needed change the current working directory:
@@ -113,7 +124,7 @@ Finally, install the main package:
 Use the following code to install the package directly from the repository without downloading all the materials:
 
 ```
-    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-3
+    pip install git+https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision.git@Week-4
 ```
 
 ## Run the script
@@ -310,13 +321,13 @@ Use the following code to run the Docker Image directly from the repository with
 **Linux/macOS:**
 
 ```
-    sudo docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-3
+    sudo docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-4
 ```
 
 **Windows:**
 
 ```
-    docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-3
+    docker run -p 8501:8501 ghcr.io/aleksei-andreev/machine-learning-in-computer-vision:Week-4
 ```
 
 After the message "*You can now view your Streamlit app in your browser*" is displayed in the terminal, you may go to the following web address to view the web demo:
