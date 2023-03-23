@@ -1,11 +1,11 @@
 # YOLOv3-nano Demo
 
-This is the demo of a highly compact `You Only Look Once` Convolutional Neural Network for Object Detection
+This is the demo of a highly compact `You Only Look Once` Convolutional Neural Network for Object Detection<br>
 
-References:
+<br>**References:**
 
-[1] PINTO0309 - 023_yolov3-nano (https://github.com/PINTO0309/PINTO_model_zoo/tree/main/023_yolov3-nano)
-[2] Abraham-M97 - YOLOV3-NANO (https://github.com/Abraham-M97/YOLOV3-NANO)
+[1] PINTO0309 - 023_yolov3-nano (https://github.com/PINTO0309/PINTO_model_zoo/tree/main/023_yolov3-nano)<br>
+[2] Abraham-M97 - YOLOV3-NANO (https://github.com/Abraham-M97/YOLOV3-NANO)<br>
 [3] YunYang1994 - tensorflow-yolov3 (https://github.com/YunYang1994/tensorflow-yolov3)
 
 ## Week 4
@@ -17,19 +17,19 @@ https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-1.2
 
 
-Branches "Week-2.1" and "Week-2.2" reproduce the assignments of "Week 2":
+<br>Branches "Week-2.1" and "Week-2.2" reproduce the assignments of "Week 2":
 
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.1
 
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-2.2
 
 
-Branch "Week-3" reproduces the assignment of "Week 3":
+<br>Branch "Week-3" reproduces the assignment of "Week 3":
 
 https://github.com/aleksei-andreev/Machine-Learning-in-Computer-Vision/tree/Week-3
 
 
-This branch reproduces the final week assignment ["Week 4"]
+<br>This branch reproduces the final week assignment ["Week 4"]
 
 ## Create a virtual environment
 
