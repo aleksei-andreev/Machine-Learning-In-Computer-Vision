@@ -4,8 +4,8 @@ This is the demo of a highly compact `You Only Look Once` Convolutional Neural N
 
 References:
 
-[1] PINTO0309 - 023_yolov3-nano (https://github.com/PINTO0309/PINTO_model_zoo/tree/main/023_yolov3-nano)
-[2] Abraham-M97 - YOLOV3-NANO (https://github.com/Abraham-M97/YOLOV3-NANO)
+[1] PINTO0309 - 023_yolov3-nano (https://github.com/PINTO0309/PINTO_model_zoo/tree/main/023_yolov3-nano)__
+[2] Abraham-M97 - YOLOV3-NANO (https://github.com/Abraham-M97/YOLOV3-NANO)__
 [3] YunYang1994 - tensorflow-yolov3 (https://github.com/YunYang1994/tensorflow-yolov3)
 
 ## Week 4
